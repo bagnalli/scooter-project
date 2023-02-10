@@ -1,0 +1,17 @@
+sequenceDiagram
+
+User -->> ScooterApp: request scooter
+ScooterApp ->> scooter: scooter available?
+scooter ->> ScooterApp: unavailable
+ScooterApp ->> User: return message unavail
+scooter ->> ScooterApp: Available
+ScooterApp ->> User: send location
+
+
+
+
+participant User
+
+participant scooter
+
+participant ScooterApp
