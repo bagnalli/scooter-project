@@ -5,6 +5,8 @@ class User {
     this.age = age;
     this.loggedIn = loggedIn;
   }
+  login(password) {}
+  logout() {}
 }
 
 module.exports = User;
